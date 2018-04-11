@@ -22,5 +22,39 @@ public class Figury {
     public static double ObwodKola(double r){
         return 2*Math.PI*r;
     }
+    /**
+     * kwadrat
+     */
+    public static double ObwodKwadratu(double a){
+        return 4*a;
+    }
+    public static double PoleKwadratu(double a){
+        return Math.pow(a,2);
+    }    
     
+    /**
+     * Prostokąt
+     */
+    public static double ObwodProstokata(double a, double b){
+        return 2*a+2*b;
+    }
+    public static double PoleProstokata(double a, double b){
+        return a*b;
+    }
+    /**
+     * stożek
+     */
+    public static double PoleStozka(double h, double r){
+        double l, Pb, Pp ;
+        l = Math.pow((h*h+r*r),(1/2));
+        Pb = Math.PI*r*l;
+        Pp = Math.PI*Math.pow(r,2);
+        return Pb+Pp;
+    }
+    /**
+     * walec
+     */
+     public static double PoleWalca(double h, double r){
+         return 2*Math.PI*Math.pow(r,2)+2*Math.PI*r*h;
+     }     
 }
